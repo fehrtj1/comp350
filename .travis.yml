@@ -1,4 +1,3 @@
-# TODO: complete this in class
 language: python
 python:
   - "2.6"
@@ -9,3 +8,11 @@ python:
   - "3.7-dev" # 3.7 development branch
 
 script: "python simple_tests.py"
+
+notifications:
+  email:
+    recipients:
+        - fehrtj1@gcc.edu
+
+    on_success: never
+    on_failure: always
